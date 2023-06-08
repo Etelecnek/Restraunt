@@ -1,0 +1,23 @@
+#content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#title {
+    background-color: aqua;
+
+}
+
+#btnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#body {
+    background-color: brown;
+    height: 100px;
+    width: 100px;
+
+}
