@@ -8,20 +8,25 @@ const homePage = (() => {
     const address = document.createElement('h4');
     const hours = document.createElement('h4');
 
+    homeContainer.setAttribute('class', 'tabContent')
+    homeContainer.setAttribute('id', 'active');
+    homeContainer.setAttribute('data-for-tab', '1');
+
+
     bigText.textContent = 'I want Taiwan!';
     smallText.textContent = 'Aaah!';
     orderBtn.textContent = 'Order Neow';
     address.textContent = 'Address: 1234 Super Land Ave., Super, SL, 1234567';
     hours.textContent = 'Hours: Mon - Thurs: 8AM - 8PM, Fri-Sun: 8AM - 11PM';
 
-    
+    contentContainer.appendChild(homeContainer);
     homeContainer.appendChild(bigText);
     homeContainer.appendChild(smallText);
     homeContainer.appendChild(orderBtn);
     homeContainer.appendChild(moreInfo);
     moreInfo.appendChild(address);
     moreInfo.appendChild(hours);
-    contentContainer.appendChild(homeContainer);
+    
 })();
 
 export { homePage };

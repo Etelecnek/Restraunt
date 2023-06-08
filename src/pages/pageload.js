@@ -2,19 +2,23 @@ const pageLoad = (() => {
     const contentContainer = document.querySelector('#content');
     const titleContainer = document.createElement('div');
     const restname = document.createElement('h2')
-    const btnContainer = document.createElement('ul')
-    const homeBtn = document.createElement('li');
-    const aboutBtn = document.createElement('li');
-    const menuBtn = document.createElement('li');
-    const contactBtn = document.createElement('li');
+
+    const homeBtn = document.createElement('button');
+    const aboutBtn = document.createElement('button');
+    const menuBtn = document.createElement('button');
+    const contactBtn = document.createElement('button');
 
     titleContainer.setAttribute('id', 'title');
     restname.setAttribute('id', 'restname');
-    btnContainer.setAttribute('id', 'btnContainer');
-    homeBtn.setAttribute('id', 'homebtn');
-    aboutBtn.setAttribute('id', 'aboutbtn');
-    menuBtn.setAttribute('id', 'menuBtn');
-    contactBtn.setAttribute('id', 'contactBtn');
+    homeBtn.setAttribute('class', 'tabButton');
+    homeBtn.setAttribute('id', 'active');
+    homeBtn.setAttribute('data-for-tab', '1');
+    aboutBtn.setAttribute('class', 'tabButton');
+    aboutBtn.setAttribute('data-for-tab', '2');
+    menuBtn.setAttribute('class', 'tabButton');
+    menuBtn.setAttribute('data-for-tab', '3');
+    contactBtn.setAttribute('class', 'tabButton');
+    contactBtn.setAttribute('data-for-tab', '4');
 
     restname.textContent = 'Celeste and Kenneth Fun Snacks'
     homeBtn.textContent = 'Home';
@@ -23,12 +27,10 @@ const pageLoad = (() => {
     contactBtn.textContent = 'Contact Info';
 
     titleContainer.appendChild(restname)
-    titleContainer.appendChild(btnContainer);
-    btnContainer.appendChild(homeBtn); 
-    btnContainer.appendChild(aboutBtn);
-    btnContainer.appendChild(menuBtn);
-    btnContainer.appendChild(contactBtn);    
-
+    titleContainer.appendChild(homeBtn); 
+    titleContainer.appendChild(aboutBtn);
+    titleContainer.appendChild(menuBtn);
+    titleContainer.appendChild(contactBtn);    
     contentContainer.appendChild(titleContainer)
 })();
 

@@ -5,4 +5,31 @@ import contact from './pages/contact';
 import menu from './pages/menu';
 import './style.css';
 
-document.getElementById('homeBtn').addEventListener('click', console.log('Clicked'))
+function setupTabs() {
+    document.querySelectorAll('.tabButton').forEach(button => {
+        button.addEventListener('click', () => {
+            const titleBar = button.parentElement;
+            const tabsContainer = titleBar.parentElement;
+            const tabNumber = button.dataset.forTab;
+            const tabToActivate = tabsContainer.querySelector(`.tabContent[data-for-tab="${tabNumber}"]`);
+
+            titleBar.querySelectorAll('#active').forEach(item => {
+            item.setAttribute('id', 'none')
+            })
+
+            tabsContainer.querySelectorAll('#active').forEach(item => {
+                item.setAttribute('id', 'none')
+            })
+            
+            button.setAttribute('id', 'active')
+            tabToActivate.setAttribute('id', 'active')
+            
+
+            
+        });
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    setupTabs();
+});

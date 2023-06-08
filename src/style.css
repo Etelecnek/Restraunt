@@ -8,16 +8,39 @@
 
 }
 
-#btnContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
 #body {
     background-color: brown;
     height: 100px;
     width: 100px;
 
 }
+
+.tabButton {
+    width: 100px;
+    height: 20px;
+    background-color: blue;
+    border: none;
+    color: white;
+}
+
+.tabButton:active {
+    background-color: rgb(74, 74, 255);
+}
+
+.tabContent {
+
+}
+
+button#active {
+    background-color: rgb(29, 29, 138);
+    border: 2px, white; 
+}
+
+div#active {
+    display: block;
+}
+
+div#none {
+    display: none;
+}
+
