@@ -1,10 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 #content {
+    height: 100%;
+    width: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 100px 500px;
 }
 
 #title {
+    grid-row: 1;
     background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 
 }
 
