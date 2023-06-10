@@ -2,7 +2,7 @@ const menuPage = (() => {
     const contentContainer = document.querySelector('#content');
     const menuContainer = document.createElement('div');
     const bigText = document.createElement('h1');
-    const smallText = document.createElement('h4');
+    const smallText = document.createElement('h1');
     const item1Container = document.createElement('div');
     const item1 = document.createElement('h4');
     const item1image = document.createElement('img');
@@ -12,11 +12,13 @@ const menuPage = (() => {
     const item2image = document.createElement('img');
     const item2dsc = document.createElement('h4');
 
-    menuContainer.setAttribute('class', 'tabContent')
+    menuContainer.setAttribute('class', 'tabContent');
     menuContainer.setAttribute('id', 'none');
     menuContainer.setAttribute('data-for-tab', '3');
-    item1Container.setAttribute('class', 'menuitems')
-    item2Container.setAttribute('class', 'menuitems')
+    bigText.setAttribute('id', 'menubigText');
+    smallText.setAttribute('id', 'menusmallText');
+    item1Container.setAttribute('class', 'menuitems');
+    item2Container.setAttribute('class', 'menuitems');
 
     item1image.setAttribute('src', 'https://images.squarespace-cdn.com/content/v1/58a26f3cbf629a87d27a8464/1613610820689-H6LSFRTDDGSI4KMLVZKF/ManukaSingle.jpg?format=500w');
     item1image.setAttribute('height', '300px');

@@ -17,7 +17,7 @@ const aboutPage = (() => {
     aboutContainer.setAttribute('class', 'tabContent')
     aboutContainer.setAttribute('id', 'none');
     aboutContainer.setAttribute('data-for-tab', '2');
-    bigText.setAttribute('id', 'bigText');
+    bigText.setAttribute('id', 'aboutbigText');
     image1.setAttribute('id', 'aboutOne');
     image2.setAttribute('id', 'aboutTwo');
     moreInfo.setAttribute('id', 'aboutThree');

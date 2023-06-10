@@ -67,15 +67,11 @@ div#none {
 }
 
 div[data-for-tab='2'] {
-    display: grid;
     grid-template-columns: 1fr 2fr;
-    padding-left: 25vw;
 }
 
-#bigText {
-    grid-row: 1;
+#aboutbigText {
     grid-column: 2;
-    margin-left: -5vw;
 }
 
 #aboutOne {
@@ -110,10 +106,35 @@ div[data-for-tab='2'] {
     margin-top: 50px;
     grid-row: 4;
     grid-column: 1/3;
+    min-width: 795px;
 }
 
 .morePicsChild {
     max-width: 335px;
+}
+
+div[data-for-tab='3'] {
+    justify-self: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+}
+
+#menubigText {
+    border: solid 2px rgba(245, 231, 168, 0.7);
+    background-color: #303805;
+    color: white;
+    grid-column: 2;
+    height: 50px;
+    margin-bottom: 100px;
+}
+
+#menusmallText {
+    border: solid 2px rgba(245, 231, 168, 0.7);
+    background-color: #303805;
+    color: white;
+    grid-column: 2;
+    height: 50px;
 }
 
 .menuitems {
@@ -126,5 +147,6 @@ div[data-for-tab='2'] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 10px;
+    grid-column: 2;
 }
-
