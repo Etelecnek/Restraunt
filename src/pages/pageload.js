@@ -20,7 +20,7 @@ const pageLoad = (() => {
     contactBtn.setAttribute('class', 'tabButton');
     contactBtn.setAttribute('data-for-tab', '4');
 
-    restname.textContent = 'Celeste and Kenneth Fun Snacks'
+    restname.textContent = 'Mt. Olive'
     homeBtn.textContent = 'Home';
     aboutBtn.textContent = 'About';
     menuBtn.textContent = 'Menu';
